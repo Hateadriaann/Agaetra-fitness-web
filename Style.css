@@ -1,0 +1,147 @@
+
+body {
+    background-color: #1A1A1A; 
+    color: #FFFFFF; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-agaetra { 
+    color: #F2C318 !important; 
+}
+
+.bg-agaetra { 
+    background-color: #F2C318 !important; 
+    color: #000 !important; 
+}
+
+
+.btn-agaetra {
+    background-color: #F2C318;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-agaetra:hover {
+    background-color: #d4a915; 
+    color: #000;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #111111; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.navbar-custom a.text-white{
+    transition: color 0.3s ease;
+}
+
+.navbar-custom a.text-white:hover{
+    color: #F2C318 !important;
+}
+
+
+/* 
+   INTEGRACIÓN SEAMLESS DE IMAGEN DE PORTADA
+   */
+
+
+@media (min-width: 992px) {
+    .contenedor-fusión-hero {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 2rem; 
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5); 
+    }
+
+    
+    .hero-image-faded {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%);
+        mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%);
+    }
+}
+
+/* 
+   ESTILOS PARA EL CALENDARIO
+   */
+.bg-calendario { background-color: #ffffff; }
+
+.calendario-header {
+    background-color: #1A1A1A;
+    color: #F2C318;
+    border-radius: 10px 10px 0 0;
+}
+
+.calendario-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 10px 10px;
+}
+
+.dia-header { font-weight: bold; text-align: center; padding-bottom: 10px; color: #6c757d; }
+
+.dia-celda {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: default;
+    transition: transform 0.2s ease;
+}
+
+.dia-celda:hover:not(.dia-vacio) {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dia-vacio { background-color: transparent; }
+.dia-semana { background-color: #F2C318; color: #000; } 
+.dia-sabado { background-color: #7e7f81; color: #000; border: 1px solid #ced4da; } 
+.dia-domingo { background-color: #1A1A1A; color: #fff; } 
+.dia-festivo { background-color: #dc3545; color: #fff; } 
+
+.leyenda-cuadro {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* 
+   FOOTER MINIMALISTA AGAETRA
+    */
+.footer-custom {
+    background-color: #050505;
+    border-top: 1px solid #1A1A1A;
+}
+
+.footer-icon {
+    color: #ffffff; 
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-icon:hover {
+    color: #F2C318; 
+    transform: translateY(-5px);
+}
+
+.text-agaetra {
+    color: #F2C318 !important;
+}
